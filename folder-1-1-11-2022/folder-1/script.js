@@ -130,3 +130,32 @@ const pubg = {
   isOnline: true,
   size: "3Gb+",
 };
+
+
+//# Random numbers
+
+// const random = Math.random();
+// console.log(random);
+// console.log(Math.round(random * 100));
+
+//$ random number between 1 and 100
+
+//# primitive values
+
+// let scoreOne = 50;
+// let scoreTwo = scoreOne;
+
+// console.log(`scoreOne => ${scoreOne}`, `scoreTwo => ${scoreTwo}`);
+
+// scoreOne = 100;
+
+// console.log(`scoreOne => ${scoreOne}`, `scoreTwo => ${scoreTwo}`);
+
+// //# reference values
+
+// const userOne = { name: "ryu", age: 30 };
+// const userTwo = userOne;
+
+// console.log(userOne, userTwo);
+// userOne.age = 40;
+// console.log(userOne, userTwo);

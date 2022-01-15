@@ -1,58 +1,59 @@
+// # Quiz => Dice!
 // let dice1 = Math.floor(Math.random() * 6 + 1);
 // let dice2 = Math.floor(Math.random() * 6 + 1);
 
-// console.log("dice1 => ", dice1);
-// console.log("dice2 => ", dice2);
-// // console.log("sum of dices => ",dice1 + dice2);
-// let roll = `you rolled a ${dice1} and a ${dice2}. they sum to ${dice1 + dice2}`;
+// console.log("dice1 =>", dice1);
+// console.log("dice2 =>", dice2);
+
+// let roll = `You rolled a ${dice1} and a ${dice2}. they sum ${dice1 + dice2}`;
+
 // console.log(roll);
 
-// console.log("Hello Dear Friends 😉");
+// # Alert
 
-// alert("You are very very Good girl😎")
+// alert("Hello");
 
-// let name = prompt("please go out");
-// console.log(name);
+// # Promptِ
 
-// let age = prompt("What is your age: ");
-// let ageNum = parseInt(age);
-// let birthday = 1400 - ageNum;
-// console.log("Your age is => ", birthday);
+// let input = prompt("What is your age: ");
+// let age = parseInt(input);
 
-// # if
+// let birthday = 1400 - age;
 
-// let age = 60;
-// if (age === 40) {
-//   console.log("You are aval 40 40iiiiii");
-// } else if (age <= 40) {
-//   console.log("you are very strong");
-// } else {
-//   console.log("good byeeeeeeeeee ");
+// alert(`your birthday is ${birthday}`);
+// // console.log(birthday);
+
+// let number = 41;
+// if (number % 2 === 0) {
+//     console.log('even');
+// }else{
+//     console.log('odd');
 // }
 
-// let a = 21;
-// if (a % 2 === 0) {
-//   console.log("Even");
+// # trafficLight
+
+// let trafficLight = prompt("What is trafficlight signal? ");
+
+// if (trafficLight === "stop") {
+//   console.log("red");
+// } else if (trafficLight === "slow") {
+//   console.log("yellow");
+// } else if (trafficLight === "go") {
+//   console.log("green");
 // } else {
-//   console.log("Odd");
+//   console.log("purple");
 // }
 
-// let password = "mohammad";
+// # Make password
+
+// let password = "moham";
 
 // if (password.length > 6) {
 //   if (password.indexOf(" ") === -1) {
-//     console.log("Your password is strong");
+//     console.log("your password is strong");
 //   } else {
-//     console.log("your password include empty string");
+//     console.log("your password contains empty string");
 //   }
 // } else {
-//   console.log("your password is not");
-// }
-
-// let age = 21;
-
-// if (age === 20 && age % 2 === 0) {
-//   console.log(`Your age is ${age}`);
-// }else{
-//   console.log(`Your age is not ${age}`);
+//   console.log("your password is not!!!!");
 // }

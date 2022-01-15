@@ -37,14 +37,22 @@
 //   console.log("Odd");
 // }
 
-let password = "mohammad";
+// let password = "mohammad";
 
-if (password.length > 6) {
-  if (password.indexOf(" ") === -1) {
-    console.log("Your password is strong");
-  } else {
-    console.log("your password include empty string");
-  }
-} else {
-  console.log("your password is not");
-}
+// if (password.length > 6) {
+//   if (password.indexOf(" ") === -1) {
+//     console.log("Your password is strong");
+//   } else {
+//     console.log("your password include empty string");
+//   }
+// } else {
+//   console.log("your password is not");
+// }
+
+// let age = 21;
+
+// if (age === 20 && age % 2 === 0) {
+//   console.log(`Your age is ${age}`);
+// }else{
+//   console.log(`Your age is not ${age}`);
+// }

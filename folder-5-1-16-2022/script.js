@@ -182,4 +182,112 @@ $constructor
 // newObj.c === anotherArray;
 // newObj.d === anotherFunction;
 
+//# Property Descriptors
 
+// const myObject = {};
+
+// Object.defineProperty( myObject, "a", {
+// 	value: 2,
+// 	writable: true,
+// 	configurable: true,
+// 	enumerable: true
+// } );
+
+// myObject.a; // 2
+
+/*
+ * Using defineProperty(..), we added the plain, normal a property to myObject in a manually explicit way. However, you generally wouldn't use this manual approach unless you wanted to modify one of the descriptor characteristics from its normal behavior.
+ */
+
+// # Writable
+
+// var myObject = {};
+
+// Object.defineProperty( myObject, "a", {
+// 	value: 2,
+// 	writable: false, // not writable!
+// 	configurable: true,
+// 	enumerable: true
+// } );
+
+// myObject.a = 3;
+
+// myObject.a; // 2
+
+// # Configurable
+
+// var myObject = {
+// 	a: 2
+// };
+
+// myObject.a = 3;
+// myObject.a;					// 3
+
+// Object.defineProperty( myObject, "a", {
+// 	value: 4,
+// 	writable: true,
+// 	configurable: false,	// not configurable!
+// 	enumerable: true
+// } );
+
+// myObject.a;					// 4
+// myObject.a = 5;
+// myObject.a;					// 5
+
+// Object.defineProperty( myObject, "a", {
+// 	value: 6,
+// 	writable: true,
+// 	configurable: true,
+// 	enumerable: true
+// } ); // TypeError
+
+/*
+ * There's a nuanced exception to be aware of: even if the property is already configurable:false, writable can always be changed from true to false without error, but not back to true if already false.
+ */
+
+//#  Object Constant
+
+// const myObject = {};
+
+// Object.defineProperty(myObject, "FAVORITE_NUMBER", {
+//   value: 42,
+//   writable: false,
+//   configurable: false,
+// });
+
+//# Prevent Extensions
+
+// const myObject = {
+// 	a: 2
+// };
+
+// Object.preventExtensions( myObject );
+
+// myObject.b = 3;
+// myObject.b; // undefined
+
+//# Existence
+
+// const myObject = {
+//   a: 2,
+// };
+
+// * We can ask an object if it has a certain property without asking to get that property's value:
+
+// console.log("a" in myObject);
+// console.log("b" in myObject);
+
+// console.log(myObject.hasOwnProperty("a"));
+// console.log(myObject.hasOwnProperty("b"));
+
+//# Iteration
+
+// const myArray = [1, 2, 3];
+// for (let i = 0; i < myArray.length; i++) {
+//   console.log(myArray[i]);
+// }
+
+//# for..of
+// for (const a of myArray) {
+//   console.log(a);
+// }

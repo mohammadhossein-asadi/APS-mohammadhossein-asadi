@@ -71,4 +71,22 @@
 // console.log("this is bananas: ","BANANAS");
 // console.log("this is bananas: ",..."BANANAS");
 
+// const arr = [1, 2, 3];
+// const arr2 = [...arr, 4, 5, 6];
+// console.log(arr2);
+
+// const obj = {
+//   a: 1,
+//   b: "Test",
+// };
+
+// const obj2 = {
+//   ...obj,
+//   c: "Owner",
+// };
+// console.log(obj2);
+
+
+// * Spread Operators --> Expand Arra or Ol
+// * Rest Parameter/Operators --> Function to get all the parameters or may be of the parameters
 

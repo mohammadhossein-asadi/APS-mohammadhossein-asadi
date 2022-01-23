@@ -86,7 +86,7 @@
 // };
 // console.log(obj2);
 
-
 // * Spread Operators --> Expand Arra or Ol
 // * Rest Parameter/Operators --> Function to get all the parameters or may be of the parameters
+
 

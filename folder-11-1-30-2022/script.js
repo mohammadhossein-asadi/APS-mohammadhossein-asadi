@@ -56,4 +56,26 @@
 
 // console.log(sumTwo(2, 3, 1, 1, 1));
 
+// # Destructuring
 
+const user = ["Mohammadhossein", 3, "student"];
+// let role = user[2];
+// let name = user[0];
+
+// console.log(`Your role is: ${role} and your name is: ${name}`);
+
+// let [name, courseCount, role] = user;
+// console.log(name, courseCount, role);
+
+// const myUser = {
+//   name: "Mohammadhossein",
+//   courseCount: 5,
+//   role: "student",
+// };
+// console.log(myUser.courseCount);
+// // * Destructuring object
+// const { name, courseCount, role } = myUser;
+// // * after Destructuring
+// console.log(courseCount);
+
+// # Dom => Look Dom folder

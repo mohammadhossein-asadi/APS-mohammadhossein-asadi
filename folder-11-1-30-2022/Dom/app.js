@@ -88,4 +88,65 @@
 
 // # Get an update attribiute of HTML elements
 
+const link = document.querySelector("a");
 
+// console.log(link.getAttribute("href"));
+
+// * setAttribute() => There are two argument, the first is the name of the attribute I want and the second is what is going to change.
+
+// link.setAttribute("href", "https://wwww.thenetninja.co.uk");
+// * After change href
+// console.log(link.getAttribute("href"));
+
+// link.innerText = "TheNet Ninja Website";
+
+const message = document.querySelector("p");
+// console.log(message.getAttribute("class"));
+
+// message.setAttribute("class", "success");
+// * You can set attribute Style
+// message.setAttribute("style", "color: green");
+
+////////////////////////////////////////#////////////////////////////////////////
+
+// const title = document.querySelector("h1");
+// title.setAttribute("style", "margin: 50px;"); //* Bad practice overwrtite => style property
+
+// console.log(title.style);
+// console.log(title.style.color);
+
+// * For style property use camelCase
+// title.style.margin = "50px"; //* Best practice => append style property
+// title.style.color = "purple";
+// title.style.fontSize = "60px";
+// title.style.margin = ""; //* Removes the value of this attribute when we use the empty string
+
+////////////////////////////////////////#////////////////////////////////////////
+// # Remove & add class attribute
+
+// const content = document.querySelector("p");
+
+// console.log(content.classList);
+// // * Added class
+// content.classList.add("error");
+// // * Removed class
+// content.classList.remove("error");
+// // * Added class success
+// content.classList.add('success')
+
+const paras = document.querySelectorAll("p");
+
+// * innerText => only text visible
+//  * textContent => Show all text inside the tag
+paras.forEach((p) => {
+  if (p.textContent.includes("error")) {
+    p.classList.add("error");
+  } else if (p.innerText.includes("success")) {
+    p.classList.add("success");
+  }
+});
+
+const title = document.querySelector(".title");
+
+// # toggle => If it does not have this class, it will add it and if it has, it will remove it from it
+title.classList.toggle("test");

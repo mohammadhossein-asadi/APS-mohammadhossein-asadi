@@ -1,3 +1,5 @@
+// * Reading
+
 // # Syntax
 
 // const myObj = {
@@ -36,7 +38,7 @@
 
 /*
 $object
-*The object to test.
+// *The object & to test.
 /*
 $constructor
 *Function to test against
@@ -291,3 +293,78 @@ $constructor
 // for (const a of myArray) {
 //   console.log(a);
 // }
+
+// * Viewing
+
+// let myTodos = {
+//   day: "Monday",
+//   meetings: 0,
+//   meetDone: 0,
+//   addMeeting(num) {
+//     this.meetings = this.meetings + num;
+//   },
+//   summary() {
+//     return `You have ${this.meetings} meetings today!`;
+//   },
+// };
+
+// myTodos.addMeeting(4);
+// console.log(myTodos.summary());
+
+// let myTodosTwo = {
+//     day: "Tuesday",
+//     meetings: 12,
+//     meetDone: 3,
+//     addMeeting: function () {
+//         console.log(this);
+//     },
+// };
+
+// myTodosTwo.addMeeting();
+
+const user = ["Mohammad", 3, "admin"];
+
+// let role = user[2];
+// let name = user[0];
+
+// let [name, courseCount, role] = user;
+
+// console.log(role);
+
+// const myUser = {
+//   name: "mohammad",
+//   courseCount: 5,
+//   role: "admin",
+// };
+
+// console.log(myUser.courseCount);
+
+// const { name, courseCount, role } = myUser;
+// console.log(name,courseCount,role);
+
+// # Spread and Rest operators
+
+// let returnValue = Math.max(2, 5, 7, 4, 2, 9, 8);
+// console.log(returnValue);
+
+// const myObj = {};
+// Object.assign(myObj, { a: 1, b: 2, c: 3 }, { z: 9, y: 8, x: 7 });
+// console.log(myObj);
+
+// # Spread
+// function sumOne(a, b) {
+//   return a + b;
+// }
+// let myA = [5, 4];
+// console.log(sumOne(...myA));
+
+// function sumTwo(...args) {
+//     console.log(args);
+//   let sum = 0;
+//   for (const arg of args) {
+//     sum += arg;
+//   }
+//   return sum;
+// }
+
+// console.log(sumTwo(1, 8, 6, 4, 75, 2, 5, 4, 5, 45));

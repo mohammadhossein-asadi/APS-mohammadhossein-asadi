@@ -77,11 +77,23 @@ const btn = document.querySelector("#v3");
 //   .addEventListener("click", () => console.log("Goodbye :("));
 
 // # Project
+// * Random BackgroundColor
+// const button = document.querySelector("button");
+// const h1 = document.querySelector("h1");
+// const p = document.createElement("p");
 
-const button = document.querySelector("button");
-const h1 = document.querySelector("h1");
-const p = document.createElement("p");
+// h1.append(p);
 
-h1.append(p);
+// button.addEventListener("click", () => {
+//   const newColor = randomColor();
+//   document.body.style.backgroundColor = newColor;
+//   p.innerText = newColor;
+// });
 
+// const randomColor = () => {
+//   const r = Math.floor(Math.random() * 255);
+//   const g = Math.floor(Math.random() * 255);
+//   const b = Math.floor(Math.random() * 255);
 
+//   return `rgb(${r} , ${g} , ${b})`;
+// };

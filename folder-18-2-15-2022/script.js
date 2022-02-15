@@ -91,7 +91,6 @@
 //     console.log("OH NO , A REQUEST FAILED!!!", err);
 //   });
 
-
 // const fakeRequest = (url) => {
 //   return new Promise((resolve, reject) => {
 //     const rand = Math.random();
@@ -114,3 +113,18 @@
 //   .catch((err) => {
 //     console.log("OH , No!", err);
 //   });
+
+// const rainBow = (color, delay) => {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       document.body.style.backgroundColor = color;
+//       resolve();
+//     }, delay);
+//   });
+// };
+
+// rainBow("red", 1000)
+//   .then(() => rainBow("orange", 1000))
+//   .then(() => rainBow("yellow", 1000))
+//   .then(() => rainBow("green", 1000))
+//   .catch((err) => console.error(err));

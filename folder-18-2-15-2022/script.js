@@ -61,4 +61,34 @@
 //   })
 //   .catch((err) => console.log(err));
 
+// # 1-Promise
+
+// const fakeRequestCallback = (url) => {
+//   return new Promise((resolve, reject) => {
+//     const delay = Math.floor(Math.random() * 4500) + 500;
+//     setTimeout(() => {
+//       if (delay > 3000) {
+//         resolve("Connection Timeout :(");
+//       } else {
+//         reject(`Here is youe fake data from ${url}`);
+//       }
+//     }, delay);
+//   });
+// };
+
+// fakeRequestCallback("test.com/page1")
+//   .then((data) => {
+//     console.log("IT WORKED!!! (page1)", data);
+//   })
+//   .then((data) => {
+//     console.log("IT WORKED!!! (page2)", data);
+//     return fakeRequestCallback("test.com/page3");
+//   })
+//   .then((data) => {
+//     console.log("IT WORKED!!! (page3)", data);
+//   })
+//   .catch((err) => {
+//     console.log("OH NO , A REQUEST FAILED!!!", err);
+//   });
+
 

@@ -92,3 +92,25 @@
 //   });
 
 
+// const fakeRequest = (url) => {
+//   return new Promise((resolve, reject) => {
+//     const rand = Math.random();
+//     console.log("random number is : ", rand);
+//     setTimeout(() => {
+//       if (rand < 0.1) {
+//         resolve(`your fake data here: ${url}`);
+//       }
+
+//       reject("request error");
+//     }, 1000);
+//   });
+// };
+
+// fakeRequest("/dogs/1")
+//   .then((res) => {
+//     console.log("done with request");
+//     console.log("data is : ", res);
+//   })
+//   .catch((err) => {
+//     console.log("OH , No!", err);
+//   });

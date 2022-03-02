@@ -269,10 +269,6 @@
 //     console.log(err);
 //   });
 
-
-
-
-
 // const delayedColorChange = (color, delay) => {
 //   return new Promise((resolve, reject) => {
 //     setTimeout(() => {
@@ -317,7 +313,6 @@
 
 // printRainbow();
 
-
 // const fakeRequest = (url) => {
 //   return new Promise((resolved, reject) => {
 //     const delay = Math.random() * 4500 + 500;
@@ -337,8 +332,6 @@
 // }
 
 // makeTwoRequests();
-
-
 
 // const fakeRequest = (url) => {
 //   return new Promise((resolved, reject) => {
@@ -370,4 +363,15 @@
 
 // makeTwoRequests();
 
+// const div = document.createElement("div");
+// const p = document.createElement("p");
+// // div.setAttribute("id","container");
+// div.id = "container";
+// console.log(div);
+// div.textContent = "Hello";
+// // div.appendChild(p);
 
+// document.body.appendChild(div);
+// // const divId = document.getElementById("content");
+
+// // divId.textContent = "HEllloooooooooooooooo";

@@ -282,12 +282,96 @@ const apiToGet =
 // req.open("GET", "https://jsonplaceholder.typicode.com/todos/");
 // req.send();
 
-fetch("https://jsonplaceholder.typicode.com/todos/")
-  .then((res) => {
-    console.log("Response wating for parse...", res);
-    return res.json();
-  })
-  .then((data) => {
-    console.log("Data parsed...", data);
-  })
-  .catch((err) => console.log("Oh no error", err));
+// fetch("https://jsonplaceholder.typicode.com/todos/")
+//   .then((res) => {
+//     console.log("Response wating for parse...", res);
+//     return res.json();
+//   })
+//   .then((data) => {
+//     console.log("Data parsed...", data);
+//   })
+//   .catch((err) => console.log("Oh no error", err));
+
+// fetch("https://jsonplaceholder.typicode.com/todos/")
+//   .then((res) => {
+//     console.log("Response wating to parse...", res);
+//     if (res.status === 404) {
+//       throw "Error fetching data";
+//     }
+//     return res.json();
+//   })
+//   .then((data) => console.log("data parsed ... ", data))
+//   .catch((err) => console.log("Oh no Error! ", err));
+
+// fetch("https://apitester.ir/api/Categories")
+//   .then((data) => data.json())
+//   .then((res) => console.log(res))
+//   .catch((err) => console.log(err));
+
+// const fetchUser = async () => {
+//   const res = await fetch("https://jsonplaceholder.typicode.com/todos/");
+//   console.log(res);
+//   const data = await res.json();
+//   return data;
+// };
+
+// fetchUser()
+//   .then((res) => console.log(res))
+//   .catch((err) => console.log(err));
+
+// const fetchUsers = async () => {
+//   try {
+//     const res = await fetch("https://jsonplaceholder.typicode.com/todos/");
+//     const data = await res.json();
+//     console.log(data);
+//   } catch (error) {
+//     console.log("Something went wrong", error);
+//   }
+// };
+
+// fetchUsers();
+
+// axios
+//   .get("https://jsonplaceholder.typicode.com/todos")
+//   .then((res) => console.log(res.data))
+//   .catch((err) => console.log(err));
+
+// const fetchUsers = async () => {
+//   try {
+//     const res = await axios.get("https://jsonplaceholder.typicode.com/todos");
+//     console.log(res.data);
+//   } catch (error) {
+//     console.log(error);
+//   }
+// };
+// fetchUsers()
+
+// const getDadJoke = async () => {
+//   try {
+
+//     const res = await axios.get("https://icanhazdadjoke.com/", {
+//       headers: {
+//         Accept: "application/json",
+//       },
+//     });
+//     return res.data.joke;
+//   } catch (error) {
+//     console.log("no jokes available , sorry");
+//   }
+// };
+
+
+// console.log(getDadJoke());
+
+// const jokes = document.querySelector("#jokes");
+// const button = document.querySelector("button");
+
+// const addNewJoke = async () => {
+//   const jokeText = await getDadJoke();
+//   const newLi = document.createElement("li");
+
+//   newLi.append(jokeText);
+//   jokes.append(newLi);
+// };
+
+// button.addEventListener("click", addNewJoke);

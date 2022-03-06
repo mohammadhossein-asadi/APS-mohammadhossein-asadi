@@ -230,3 +230,64 @@ async function makeTwoRequests() {
 }
 
 // makeTwoRequests()
+
+const apiToGet =
+  '{"ticker":{"base":"BTC","target":"USD","price":"38280.58063610","volume":"97811.05442583","change":"-202.19261818"},"timestamp":1621704005,"success":true,"error":""}';
+
+// console.log(apiToGet);
+// const apiPrice = apiToGet.ticker.price;
+// console.log(apiPrice);
+
+// * Convert to object
+
+// const toJason = JSON.parse(apiToGet);
+// // console.log(toJason);
+
+// const apiPrice = toJason.ticker.price;
+// // console.log(apiPrice);
+
+// // * Convert to json
+
+// const apiToPost = {
+//   ticker: {
+//     base: "BTC",
+//     target: "USD",
+//     price: "38280.58063610",
+//     volume: "97811.05442583",
+//     change: "-202.19261818",
+//   },
+//   timestamp: 1621704005,
+//   success: true,
+//   error: "",
+// };
+
+// const toApiFormat = JSON.stringify(apiToPost)
+// console.log(toApiFormat);
+
+//* XMLHttpRequest
+
+// const req = new XMLHttpRequest();
+// req.onload = function () {
+//   console.log("ALL done with request!!!");
+//   console.log(req);
+//   const data = JSON.parse(req.responseText);
+//   console.log(data);
+// };
+
+// req.onerror = function () {
+//   console.log("Error!!!");
+//   console.log(req);
+// };
+
+// req.open("GET", "https://jsonplaceholder.typicode.com/todos/");
+// req.send();
+
+fetch("https://jsonplaceholder.typicode.com/todos/")
+  .then((res) => {
+    console.log("Response wating for parse...", res);
+    return res.json();
+  })
+  .then((data) => {
+    console.log("Data parsed...", data);
+  })
+  .catch((err) => console.log("Oh no error", err));

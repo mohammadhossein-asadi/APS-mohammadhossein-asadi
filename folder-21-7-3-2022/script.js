@@ -109,4 +109,30 @@ function Color(r, g, b) {
 }
 
 const white = new Color(35, 0, 190);
-console.log(white);
+// console.log(white);
+
+// # Class
+
+class User {
+  constructor(username, email) {
+    this.username = username;
+    this.email = email;
+    this.count = 0;
+  }
+  logout() {
+    console.log(`the user ${this.username} has just logged out :(`);
+    return this;
+  }
+  logout() {
+    this.count++;
+    console.log(`the user ${this.username} has just logged in :)`);
+    return this;
+  }
+  password() {
+    console.log("the user password is 1234");
+  }
+  loginCounter() {
+    console.log(`the user ${this.username} has logged in ${this.count} times`);
+    return this;
+  }
+}

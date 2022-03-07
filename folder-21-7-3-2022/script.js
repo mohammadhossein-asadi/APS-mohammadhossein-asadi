@@ -119,11 +119,12 @@ class User {
     this.email = email;
     this.count = 0;
   }
+
   logout() {
     console.log(`the user ${this.username} has just logged out :(`);
     return this;
   }
-  logout() {
+  login() {
     this.count++;
     console.log(`the user ${this.username} has just logged in :)`);
     return this;
@@ -136,3 +137,11 @@ class User {
     return this;
   }
 }
+
+const userOne = new User("mohammadhossein", "mohammadhossein@gmail.com");
+const userTwo = new User("Arman", "Arman@gmail.com");
+
+// console.log(userOne, userTwo);
+// console.log(userOne.login());
+// console.log(userOne.logout());
+// console.log(userOne.loginCounter());

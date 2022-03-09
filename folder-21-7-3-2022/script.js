@@ -113,33 +113,33 @@ function Color(r, g, b) {
 
 // # Class
 
-class User {
-  constructor(username, email) {
-    this.username = username;
-    this.email = email;
-    this.count = 0;
-  }
+// class User {
+//   constructor(username, email) {
+//     this.username = username;
+//     this.email = email;
+//     this.count = 0;
+//   }
 
-  logout() {
-    console.log(`the user ${this.username} has just logged out :(`);
-    return this;
-  }
-  login() {
-    this.count++;
-    console.log(`the user ${this.username} has just logged in :)`);
-    return this;
-  }
-  password() {
-    console.log("the user password is 1234");
-  }
-  loginCounter() {
-    console.log(`the user ${this.username} has logged in ${this.count} times`);
-    return this;
-  }
-}
+//   logout() {
+//     console.log(`the user ${this.username} has just logged out :(`);
+//     return this;
+//   }
+//   login() {
+//     this.count++;
+//     console.log(`the user ${this.username} has just logged in :)`);
+//     return this;
+//   }
+//   password() {
+//     console.log("the user password is 1234");
+//   }
+//   loginCounter() {
+//     console.log(`the user ${this.username} has logged in ${this.count} times`);
+//     return this;
+//   }
+// }
 
-const userOne = new User("mohammadhossein", "mohammadhossein@gmail.com");
-const userTwo = new User("Arman", "Arman@gmail.com");
+// const userOne = new User("mohammadhossein", "mohammadhossein@gmail.com");
+// const userTwo = new User("Arman", "Arman@gmail.com");
 
 // console.log(userOne, userTwo);
 // console.log(userOne.login());
@@ -257,4 +257,38 @@ const userTwo = new User("Arman", "Arman@gmail.com");
 
 // const white = new Color(255, 255, 255, "white");
 
+class User {
+  constructor(username, email) {
+    this.email = email;
+    this.username = username;
+    this.count = 0;
+  }
 
+  logout() {
+    console.log(`the user ${this.username} has just logged out`);
+    return this;
+  }
+
+  login() {
+    this.count++;
+    console.log(`the user ${this.username} has just logged in`);
+    return this;
+  }
+
+  loginCounter() {
+    console.log(`the user ${this.username} has logged in ${this.count} times`);
+    return this;
+  }
+}
+
+class Admin extends User {
+  constructor(usename, email, title) {
+    super(usename, email);
+    this.title = title;
+  }
+
+  deleteUser(user) {
+    const newUsers = user.fliter((u) => u.usename !== user.usename);
+    console.log(newUsers);
+  }
+}
